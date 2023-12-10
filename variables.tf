@@ -1,7 +1,6 @@
 variable "existing_rg_name" {
   description = "value for the name of an existing resource group"
   type        = string
-  default     = "nat-gateway-example-rg"
   nullable    = false
 }
 variable "nat_gw_name" {
