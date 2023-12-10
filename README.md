@@ -17,8 +17,9 @@ provider "azurerm" {
   features {}
 }
 
-module "nat-gw" {
-  source = ".//terraform-azurerm-natgateway"
+module "natgateway" {
+  source  = "carlzxc71/natgateway/azurerm"
+  version = "1.0.1"
 
     nat_gw_name      = "natgw-prod-sc-core"
     nat_gw_sku_name  = "Standard"
