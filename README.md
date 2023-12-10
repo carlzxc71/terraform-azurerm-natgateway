@@ -21,9 +21,12 @@ module "natgateway" {
   source  = "carlzxc71/natgateway/azurerm"
   version = "1.0.3"
 
+    // Required variables
+    existing_rg_name = "rg-prod-sc-core"
+    
+    // Optional variables
     nat_gw_name      = "natgw-prod-sc-core"
     nat_gw_sku_name  = "Standard"
-    existing_rg_name = "rg-prod-sc-core"
     location         = "Sweden Central"
 }
 ```
