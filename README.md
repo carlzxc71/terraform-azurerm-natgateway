@@ -19,7 +19,7 @@ provider "azurerm" {
 
 module "natgateway" {
   source  = "carlzxc71/natgateway/azurerm"
-  version = "1.0.1"
+  version = "1.0.3"
 
     nat_gw_name      = "natgw-prod-sc-core"
     nat_gw_sku_name  = "Standard"
