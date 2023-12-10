@@ -19,7 +19,7 @@ provider "azurerm" {
 
 module "natgateway" {
   source  = "carlzxc71/natgateway/azurerm"
-  version = "1.0.3"
+  version = "1.0.5"
 
     // Required variables
     existing_rg_name = "rg-prod-sc-core"
