@@ -17,9 +17,22 @@ variable "nat_gw_sku_name" {
 
 }
 
+variable "pip_sku_name" {
+  description = "value for the sku name of the public IP"
+  type        = string
+  default     = "Standard"
+
+}
+
 variable "location" {
   description = "value for the location of the nat gateway"
   type        = string
   default     = "West Europe"
 
+}
+
+variable "pip_name" {
+  description = "value for the name of the public ip"
+  type        = string
+  default     = "pip-nat-gateway"
 }
