@@ -6,5 +6,5 @@ output "name" {
 output "pip_address" {
   value       = azurerm_public_ip.this.ip_address
   description = "The address of the public ip"
-  
+
 }
