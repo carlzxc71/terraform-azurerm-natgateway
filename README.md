@@ -19,7 +19,7 @@ provider "azurerm" {
 
 module "natgateway" {
   source  = "carlzxc71/natgateway/azurerm"
-  version = "1.0.7"
+  version = "1.0.8"
 
     // Required variables
     existing_rg_name = "rg-prod-sc-core"
@@ -28,6 +28,8 @@ module "natgateway" {
     nat_gw_name      = "natgw-prod-sc-core"
     nat_gw_sku_name  = "Standard"
     location         = "Sweden Central"
+    pip_sku_name     = "Standard"
+    pip_name         = "pip-nat-gateway"
 }
 ```
 <!-- BEGIN_TF_DOCS -->
